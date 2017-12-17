@@ -1,0 +1,98 @@
+@import "the-best-movie-search-app-theme";
+
+// Core variables and mixins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+.rc-pagination-item-active{
+	@extend .active;
+}
+.rc-pagination-prev{
+	a:before{
+		content: "<"
+	}
+}
+.rc-pagination-next{
+	a:before{
+		content: ">"
+	}
+}
+
+.row{
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.movie {
+  margin-bottom: 30px;
+  text-align: left;
+  .movie-content{
+  	height: 100%;
+  	.thumbnail{
+  		height: 100%;
+  	}
+  }
+  h3{
+  	margin-top: 10px;
+  }
+  p{
+  	margin: 0;
+  }
+  .imdb_link{
+  	display: block;
+  	margin-top: 6px;
+	  .imdb_logo{
+			display: inline;
+			width: 40px;
+	  }
+	}
+}
+
